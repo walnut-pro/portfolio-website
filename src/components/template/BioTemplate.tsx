@@ -29,7 +29,7 @@ const BioTemplate = () => {
               </Td>
             </Tr>
             <Tr>
-              <Td>2020 to present</Td>
+              <Td>2022 now</Td>
               <Td>Working as Application Engineer at Rakuten</Td>
             </Tr>
           </Tbody>
