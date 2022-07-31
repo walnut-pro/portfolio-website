@@ -1,10 +1,19 @@
-import { Box, Text, VStack } from '@chakra-ui/react';
+import { Box, Button, Text, useColorMode, useColorModeValue, VStack } from '@chakra-ui/react';
 
 const IntroduceTemplate = () => {
+  const { toggleColorMode } = useColorMode();
+
+  const bg = useColorModeValue('whiteAlpha.500', 'whiteAlpha.200');
+  // const color = useColorModeValue('white', 'gray.800');
   return (
     <VStack>
       <Box>Banner area</Box>
-      <Box>NamePlate Area</Box>
+      <Box borderRadius={'lg'} bg={bg} p={3} mb={6} textAlign={'center'}>
+        Hello, I am a Application Engineer
+      </Box>
+      <Button size='sm' onClick={toggleColorMode}>
+        Toggle Mode
+      </Button>
       <Box>
         <Text>Who am I?</Text>
       </Box>
